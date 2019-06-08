@@ -1,0 +1,35 @@
+
+<div class="form-group text-center">
+    <button *ngIf="gitHubResponse" class="btn btn-warning"  id="bookmarkBtn" type="submit" (click)="getBookmarks()">Show Bookmarks</button>
+    <div>
+        <h4>Enter repository name</h4>            
+        <input type="text" [(ngModel)] = "repositoryName" (keydown)="keyDownFunction($event)" id="inputRep" placeholder="Repository name">
+        <button class="btn btn-primary" (click)="searchRepository()">Search</button>            
+    </div>
+   
+    <h4 id="incorectRepositoryMsg"></h4>
+    
+    <div class="repositoryInfo" *ngIf="showRepositoryFrame">
+        <div id=repositoryFrame>
+            <h4>{{repository.repositoryName}}</h4>
+            <hr>
+            <div class="flippingBtn">
+                <button class="btn btn-primary" [disabled]="gitHubResponse.total_count < 2" (click)="prevPicture()">&laquo;</button>
+            </div>
+            <img src="{{repository.avatarUrl}}" width="200">
+            <div class="flippingBtn">
+                <button class="btn btn-primary" [disabled]="gitHubResponse.total_count < 2" (click)="nextPicture()">&raquo;</button>
+            </div>
+            <div>
+                <button class="btn btn-success" id="bookmarkBtn" type="submit" (click)="addBookmark()">Add Bookmark</button>
+            </div>            
+        </div>        
+    </div>
+    
+</div>
+
+
+
+
+
+

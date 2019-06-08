@@ -1,0 +1,32 @@
+.repositoryInfo{
+    outline: 3px solid lightgrey;
+    display: inline-block;
+    padding: 15px;
+}
+
+#inputRep{
+    margin-right: 10px;
+    padding-bottom: 8px;
+    text-align: start;
+    margin-bottom: 30px;
+    padding-left: 3px;
+}
+
+#bookmarkBtn{
+    text-align: center;
+    margin: 10px;
+}
+
+hr{
+    border-top: 3px solid lightgray
+}
+
+.flippingBtn {
+    display: inline;
+    margin: 10px;
+}
+
+#prevBtn {
+    display: inline;
+    margin-right: 10px;
+}

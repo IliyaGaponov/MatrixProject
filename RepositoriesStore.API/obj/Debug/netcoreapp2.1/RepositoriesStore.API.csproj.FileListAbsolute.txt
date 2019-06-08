@@ -1,0 +1,14 @@
+C:\GitHubRepositorySearchProject\RepositoriesStore.API\bin\Debug\netcoreapp2.1\RepositoriesStore.API.deps.json
+C:\GitHubRepositorySearchProject\RepositoriesStore.API\bin\Debug\netcoreapp2.1\RepositoriesStore.API.runtimeconfig.json
+C:\GitHubRepositorySearchProject\RepositoriesStore.API\bin\Debug\netcoreapp2.1\RepositoriesStore.API.runtimeconfig.dev.json
+C:\GitHubRepositorySearchProject\RepositoriesStore.API\bin\Debug\netcoreapp2.1\RepositoriesStore.API.dll
+C:\GitHubRepositorySearchProject\RepositoriesStore.API\bin\Debug\netcoreapp2.1\RepositoriesStore.API.pdb
+C:\GitHubRepositorySearchProject\RepositoriesStore.API\obj\Debug\netcoreapp2.1\RepositoriesStore.API.csprojAssemblyReference.cache
+C:\GitHubRepositorySearchProject\RepositoriesStore.API\obj\Debug\netcoreapp2.1\RepositoriesStore.API.csproj.CoreCompileInputs.cache
+C:\GitHubRepositorySearchProject\RepositoriesStore.API\obj\Debug\netcoreapp2.1\RepositoriesStore.API.RazorAssemblyInfo.cache
+C:\GitHubRepositorySearchProject\RepositoriesStore.API\obj\Debug\netcoreapp2.1\RepositoriesStore.API.RazorAssemblyInfo.cs
+C:\GitHubRepositorySearchProject\RepositoriesStore.API\obj\Debug\netcoreapp2.1\RepositoriesStore.API.AssemblyInfoInputs.cache
+C:\GitHubRepositorySearchProject\RepositoriesStore.API\obj\Debug\netcoreapp2.1\RepositoriesStore.API.AssemblyInfo.cs
+C:\GitHubRepositorySearchProject\RepositoriesStore.API\obj\Debug\netcoreapp2.1\RepositoriesStore.API.RazorTargetAssemblyInfo.cache
+C:\GitHubRepositorySearchProject\RepositoriesStore.API\obj\Debug\netcoreapp2.1\RepositoriesStore.API.dll
+C:\GitHubRepositorySearchProject\RepositoriesStore.API\obj\Debug\netcoreapp2.1\RepositoriesStore.API.pdb
