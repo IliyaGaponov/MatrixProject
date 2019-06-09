@@ -11,7 +11,7 @@ export class BookmarksComponent implements OnInit, AfterViewInit {
   @ViewChild('gallery') _elem: ElementRef;
   repositoriesArr: any[] = [];
   showGallery: boolean;
-  response: any;
+  response: JSON;
 
   constructor(private sessionServise: SessionService, private renderer: Renderer2) {}
 
@@ -28,7 +28,11 @@ export class BookmarksComponent implements OnInit, AfterViewInit {
       error => {
         console.log(error);
       });
-      this.repositoriesArr = JSON.parse(this.response.toString());
+
+      if (this.response != null) {
+        this.repositoriesArr = JSON.parse(this.response.toString());
+      }
+
       this.showBookmarks();
   }
 
