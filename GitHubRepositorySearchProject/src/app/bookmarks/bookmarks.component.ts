@@ -9,8 +9,9 @@ import { SessionService } from '../servises/session.service';
 export class BookmarksComponent implements OnInit, AfterViewInit {
 
   @ViewChild('gallery') _elem: ElementRef;
-  repositoriesArr: any;
+  repositoriesArr: any[] = [];
   showGallery: boolean;
+  response: any;
 
   constructor(private sessionServise: SessionService, private renderer: Renderer2) {}
 
@@ -20,23 +21,23 @@ export class BookmarksComponent implements OnInit, AfterViewInit {
 
   getBookmarks() {
     this.sessionServise.getBookmarks().subscribe(
-      (response: Response) => {
-        this.repositoriesArr = JSON.parse(response.toString());
+      (response: JSON) => {
+        this.response = response;
         console.log(response);
       },
       error => {
         console.log(error);
       });
-
+      this.repositoriesArr = JSON.parse(this.response.toString());
       this.showBookmarks();
   }
 
   ngAfterViewInit(): void {
-    this.repositoriesArr.forEach(function (repos) {
+      this.repositoriesArr.forEach(repos => {
       const wrapperDivElement = this.renderer.createElement('div');
       const imgElement = this.renderer.createElement('img');
       const divElement = this.renderer.createElement('div');
-      const repositoryName = this.renderer.createText('repos.repositoryName');
+      const repositoryName = this.renderer.createText(repos.repositoryName);
 
       this.renderer.setAttribute(wrapperDivElement, 'class', 'gallery');
       this.renderer.setAttribute(imgElement, 'src', repos.avatarUrl);
@@ -48,7 +49,7 @@ export class BookmarksComponent implements OnInit, AfterViewInit {
       this.renderer.appendChild(wrapperDivElement, imgElement);
       this.renderer.appendChild(wrapperDivElement, divElement);
       this.renderer.appendChild(this._elem.nativeElement, wrapperDivElement);
-    });
+      });
   }
 
   showBookmarks() {
